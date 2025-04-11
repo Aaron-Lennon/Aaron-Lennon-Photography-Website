@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Overpass+Mono:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="javascript/animatedCursor.js"></script>
+    <script defer src="javascript/activePage.js"></script>
+    <script defer src="javascript/scripts.js"></script>
+    <title>Contact | Aaron Lennon Photography</title>
+</head>    
+<body>
+
+    <div class="holder">
+            
+        <div class="sidenav">
+            <div class="logo"><img src="images/Frame 1.png" alt="Aaron Lennon Photography"></div>
+            <nav>
+                <ul class="menu"> 
+                    <li><a href="index.html">Portfolio</a></li>
+                    <li><a href="kit.html">My Kit</a></li>
+                    <li><a href="about.html">About me</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <ul class="socials">
+                <li><a id="home" href="https://www.instagram.com/aaron_o_lionnain/" target="_blank" rel="noopener noreferrer"><img class="image_on" src="images/instagram.png" alt="logo" /><img class="image_off" src="images/instagramhover.png" alt="logo" /></a></li>
+                <li><a id="home" href="#Linkedin" target="_blank" rel="noopener noreferrer"><img class="image_on" src="images/linkedin.png" alt="logo" /><img class="image_off" src="images/linkedinhover.png" alt="logo" /></a></li>
+            </ul>
+        </div>
+        <div class="main">
+            <h1 class="contactHeader">Contact</h1>
+            <br>
+            <hr>
+            <div class="contact-form-container">
+                <form accept-charset="UTF-8" action="https://getform.io/f/awnqmmzb" method="POST" enctype="multipart/form-data"  target="_blank" id="wpform">
+                        
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Full Name / Organization</label>
+                            <input type="text" id="name" 
+                                name="name" 
+                                placeholder="John Doe" required>
+                            <span class="error-message" id="nameError"></span>
+                            
+                        </div>
+                    <br>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" 
+                                name="email" 
+                                placeholder="Your Email" required>
+                            <span class="error-message" id="emailError"></span>
+                        </div>
+                    <br>
+                        <div class="form-group">
+                            <label for="message">Subject</label>
+                            <input type="message" id="message" 
+                                name="Subject" 
+                                placeholder="Your Message Subject" required>
+                            <span class="error-message" id="messageError"></span>
+                        </div>
+                    <br>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" 
+                                    name="message" 
+                                    placeholder="Your Message" 
+                                    rows="5" required></textarea>
+                            <span class="error-message" id="messageError"></span>
+                        </div>
+                        <button type="submit" 
+                                class="submit-button">
+                            Send Message
+                        </button>
+                    </form>
+                </form>    
+            </div>
+        </div>    
+    </div>
+    <div class="cursor"></div>
+</body>
+</html> 

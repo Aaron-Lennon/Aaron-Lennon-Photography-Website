@@ -1,0 +1,323 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html, body{
+    cursor: none;
+}
+
+body {
+    font-family: "Overpass Mono", Overpass, sans-serif;
+    background-color: #c6c6c6;
+  }
+
+.holder{
+    display:grid, flex;
+    margin-right: 30px;
+    overflow: auto;
+
+}
+
+
+.logo{
+    display:flex;
+    margin-top: 24px;
+    margin-bottom: 240px;
+}
+
+.menu li{
+    margin-bottom:30px;
+    margin-left: 17px;
+    
+}
+
+.socials{
+    justify-content: space-around;
+    align-items:baseline;
+    display: flex;
+    flex-direction: row;
+    margin-right: 23px;
+    margin-top: 300px;
+}
+
+.sidenav{
+    width:200px;
+    background: linear-gradient(180deg, #B5B5B5 0.87%, #757272 15.5%, #5B5B5B 24%, #535353 31%, #191919 100%);
+    box-shadow: 10px 0px 4px 0px rgba(0, 0, 0, 0.25);
+    border-right: 2px solid #020202;
+    height:100vh;
+    position: fixed;
+}
+
+.main{
+    padding-left: 200px;
+}
+
+li a:is(:link, :active, :visited) {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-family: "Overpass Mono", Overpass, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 3.36px;
+    color: #ffffff;
+    display: block;
+    margin-inline: auto;
+    flex-direction: row;
+    cursor: none;
+  }
+
+nav a:hover{
+    color: #8fff9e;
+}
+
+a:is(:link, :active, :visited).active {
+    color: #8fff9e;
+    text-decoration: underline dotted rgb(255, 255, 255);
+    
+ }
+
+.image_off, #home:hover .image_on{
+    display:none
+ }
+
+.image_on, #home:hover .image_off{
+    display:block
+ }  
+
+.main{
+   margin-left: 30px;
+   margin-top: 80px;
+}
+
+.contact-form-container {
+    background-color: #c6c6c6;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 1000px;
+    width: 100%;
+    margin-inline: auto;
+    margin-top: 30px;
+    text-decoration: none;
+    font-family: "Overpass Mono", Overpass, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 3.36px;
+}
+
+.portfolioHeader{
+    text-align: center;
+    font-family: "Major Mono Display", Overpass;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 7.2px;
+}
+
+.kitHeader{
+    text-align: center;
+    font-family: "Major Mono Display", Overpass;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 7.2px;
+}
+
+.aboutHeader{
+    text-align: center;
+    font-family: "Major Mono Display", Overpass;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 7.2px;
+}
+
+.contactHeader{
+    text-align: center;
+    font-family: "Major Mono Display", Overpass;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 7.2px;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+textarea {
+    resize: none;
+}
+
+.error-message {
+    color: red;
+    font-size: 0.875rem;
+    display: none; /* Hidden by default */
+}
+
+.submit-button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 0.75rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #218838;
+}
+
+input::placeholder {
+    font-style: italic;
+}
+
+textarea::placeholder{
+    font-style: italic;
+}
+
+
+.hover-this {
+    transition: all 0.3s ease;
+  }
+
+.cursor {
+    pointer-events: none;
+    position: fixed;
+    padding: 0.3rem;
+    background-color: #fff;
+    border-radius: 50%;
+    mix-blend-mode: difference;
+    transition: transform 0.3s ease;
+  }
+  
+  .hover-this:hover ~ .cursor {
+    transform:translate(-50%, -50%) scale(8);
+  }
+    
+img { 
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.grid-wrapper > div {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-wrapper > div > img {
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.grid-wrapper {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-auto-rows: 200px;
+    grid-auto-flow: dense;
+}
+
+.grid-wrapper .wide {
+    grid-column: span 2;
+}
+
+.grid-wrapper .tall {
+    grid-row: span 2;
+}
+
+.grid-wrapper .taller {
+    grid-row: span 3;
+}
+
+.grid-wrapper .big {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.grid-wrapper .bigger {
+    grid-column: span 2;
+    grid-row: span 3;
+}
+
+.A7C{
+    display: flex;
+    justify-content: flex-start;
+    gap: 75px;
+    margin-top: 30px;
+    margin-left: 50px;
+}
+
+.text-box{
+    padding-top: 30px;
+    padding-right: 100px;
+    text-align: justify;
+    line-height: 2;
+}
+
+.about-text-box{
+    padding-top: 10px;
+    padding-right: 100px;
+    text-align: justify;
+    line-height: 2;
+}
+
+.sonyLens{
+    display: flex;
+    justify-content: flex-start;
+    gap: 75px;
+    margin-top: 30px;
+    margin-left: 100px;
+}
+
+.me{
+    display: flex;
+    justify-content: flex-start;
+    gap: 75px;
+    margin-top: 120px;
+ 
+}
+
+.mePic{
+    max-width: 400px;
+    border-radius: 100px;
+    margin-left: 50px;
+}
+
+.collegeLink{
+    text-decoration: underline dotted;
+}
+  
